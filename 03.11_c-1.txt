@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+
+    int day;
+    double money;
+    char grade;
+    char name[20]; //여행지 이름 저장(문자열)
+    
+    printf("여행지 이름: "); //화면 출력문
+    scanf("%s", name); //scanf 키보드로 값을 입력받는다
+    //문자열은 이름 자체가 주소이므로 &안씀
+    //%s는 문자열형
+    
+    printf("여행 일수: ");
+    scanf("%d", &day);
+    //%d는 정수형
+    
+    printf("여행 경비: ");
+    scanf("%lf", &money);
+    //%f는 실수형
+    
+    printf("여행 등급(A/B/C): ");
+    scanf(" %c", &grade);
+    //%c는 단일 문자형
+    //공백은 엔터키 상쇄
+    
+    printf("\n여행지: %s", name); //printf("~~%x", 변수); %x자리에 변수의 값을 넣어라
+    printf("\n여행 일수: %5d", day); //\n이란 줄 넘김
+    printf("\n여행 경비: %5.1f", money); //%5.1f 5칸을 오른쪽부터 채운다.
+    printf("\n여행 등급: %c", grade);asdf dfsdfsd dsaasddsdsfddfsdsads
+    
+    return 0;
+}
